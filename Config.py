@@ -10,8 +10,8 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
     SUPPORT = os.environ.get("SUPPORT", "TheSupportChat") # Your Support
     CHANNEL = os.environ.get("CHANNEL", "TheUpdatesChannel") # Your Channel
-    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/3d8ecee0ba7dddfc6fce4.jpg")
-    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/66518ed54301654f0b126.png")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph//file/c78b41328ea7f4e1f7d39.jpg")
+    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph//file/dd10cb056fc5454375bdc.jpg")
     ASSISTANT_ID = int(os.environ.get("ASSISTANT_ID", "")) # telegram I'd not Username
     AUTO_LEAVE_TIME = int(os.environ.get("AUTO_LEAVE_ASSISTANT_TIME", "54000")) # in seconds
     AUTO_LEAVE = os.environ.get('AUTO_LEAVING_ASSISTANT', None) # Change it to "True"
