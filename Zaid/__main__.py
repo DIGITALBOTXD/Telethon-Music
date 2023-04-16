@@ -32,7 +32,7 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(start_bot())
 
 print("[INFO]: SUCCESSFULLY STARTED BOT!")
-print("[INFO]: VISIT @TheUpdatesChannel")
+print("[INFO]: VISIT @B_R_O_K_E_N_B)
 
 if __name__ == "__main__":
     Zaid.run_until_disconnected()
