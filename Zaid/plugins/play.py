@@ -25,8 +25,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from youtubesearchpython import VideosSearch
 
  
-fotoplay = "https://telegra.ph/file/b6402152be44d90836339.jpg"
-ngantri = "https://telegra.ph/file/b6402152be44d90836339.jpg"
+fotoplay = "https://telegra.ph//file/0b8fe50483e0cda02ebb8.jpg"
+ngantri = "https://telegra.ph//file/f216bdd6ffeeb28fb68fb.jpg"
 from Zaid import call_py, Zaid, client as Client
 owner = "1669178360"
 from Zaid.helpers.yt_dlp import bash
@@ -231,7 +231,7 @@ async def play(event):
 
 #end
 
-@Zaid.on(events.NewMessage(pattern="^[/?!]end"))
+@Zaid.on(events.NewMessage(pattern="^[/!]end"))
 @is_admin
 async def vc_end(event, perm):
     chat_id = event.chat_id
@@ -247,7 +247,7 @@ async def vc_end(event, perm):
         await event.reply("**Ntg is playing ~**")
 
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]vplay"))
+@Zaid.on(events.NewMessage(pattern="^[!/]vplay"))
 @AssistantAdd
 async def vplay(event):
     if Config.HEROKU_MODE == "ENABLE":
@@ -413,7 +413,7 @@ async def vplay(event):
 
 
 #playlist
-@Zaid.on(events.NewMessage(pattern="^[?!/]playlist"))
+@Zaid.on(events.NewMessage(pattern="^[!/]playlist"))
 @is_admin
 async def vc_playlist(event, perm):
     chat_id = event.chat_id
@@ -443,7 +443,7 @@ async def vc_playlist(event, perm):
 
 
 #leavevc
-@Zaid.on(events.NewMessage(pattern="^[?!/]leavevc"))
+@Zaid.on(events.NewMessage(pattern="^[!/]leavevc"))
 @is_admin
 async def leavevc(event, perm):
     xnxx = await event.reply("Processing")
