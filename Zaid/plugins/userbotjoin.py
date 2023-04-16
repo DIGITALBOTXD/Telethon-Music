@@ -17,8 +17,8 @@ from Zaid.status import *
 
 
 
-@Zaid.on(events.NewMessage(pattern="^[!?/]join ?(.*)"))
-@Zaid.on(events.NewMessage(pattern="^[!?/]userbotjoin ?(.*)"))
+@Zaid.on(events.NewMessage(pattern="^[!/]join /(.*)"))
+@Zaid.on(events.NewMessage(pattern="^[!/]userbotjoin /(.*)"))
 @is_admin
 async def _(e, perm):
     chat_id = e.chat_id
