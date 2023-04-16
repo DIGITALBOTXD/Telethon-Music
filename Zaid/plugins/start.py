@@ -13,7 +13,7 @@ PM_START_TEXT = """
 ➻ **ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴍᴏʀᴇ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ**.
 """
 
-@Zaid.on(events.NewMessage(pattern="^[?!/]start$"))
+@Zaid.on(events.NewMessage(pattern="^[!/]start$"))
 async def start(event):
     if Config.MANAGEMENT_MODE == "ENABLE":
         return
